@@ -1,0 +1,309 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	background-color: hsl(177, 72%, 85%);
+	font-family: 'quicksand';
+	padding: 20px;
+}
+
+#container {
+	border: 1px solid grey;
+	padding: 30px;
+	background-color: white;
+}
+
+header {
+	width: 100%;
+	background-color: rgb(36, 132, 163);
+	display: inline-block;
+	font-family: 'quicksand';
+	display: flex;
+	padding: 20px;
+}
+
+section, header {
+	margin-bottom: 15px;
+}
+#box {
+	border: 7px solid #FFFFFF;
+	width: 70px;
+	height: 70px;
+	-webkit-transform: rotate(15deg);
+	margin-left: 15%;
+	display: inline-block;
+	float: left;
+	margin-top: 15px;
+	background-color: #A533A5;
+}
+#head {
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	font-family: 'quicksand';
+	font-size: 45px;
+	margin-bottom: 0;
+	font-weight: 700;
+}
+span#flashing {
+	animation: flash linear 4s infinite;
+	color: rgb(69, 64, 64);
+}
+@keyframes flash {
+	0% { text-shadow: 0 0 0px black; 
+		 color: rgb(69, 64, 64);
+	}
+	25% { text-shadow: 0 0 5px black; 
+		 color: rgb(69, 64, 64);
+	}
+	50% { text-shadow: 0 0 10px white;
+			color: white;
+	 }
+	75% { text-shadow: 0 0 5px black; 
+		 color: rgb(69, 64, 64);
+	}
+	100% { text-shadow: 0 0 0px black;
+		color: rgb(69, 64, 64);
+	 }
+}
+span#me {
+	color: rgb(69, 64, 64);
+	font-weight: 600;
+	font-size: 65px;
+}
+#head h2 {
+	margin: 0 20px 10px 0;
+	margin-left: auto;
+	color: white;
+	padding-top: 0;
+}
+ul {
+	margin-top: 30px;
+}
+li {
+	list-style: none;
+	border-radius: 50%;
+	border: 4px solid #FFFFFF;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	line-height: 66px;
+	font-size: 20px;
+	padding-left: 2px;
+}
+li:hover {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+#red {
+	background-color: rgb(252, 6, 6);
+}
+#black {
+	background-color: black;
+}
+#blue {
+	background-color: rgb(30, 30, 213);
+}
+#pink {
+	background-color: #F4133A;
+	font-size: 15px;
+}
+#yellow {
+	background-color: #E5E50A;
+}
+#green {
+	background-color: #20C006;
+}
+
+#color, #color2, #color3 {
+	padding: 20px 0;
+}
+
+.color {
+	text-align: center;
+	background-color: rgb(186, 49, 49);
+	padding-bottom: 20px;
+}
+h2 {
+	color: rgb(27, 215, 200);
+	font-size: 50px;
+	padding-top: 15px;
+	margin: 0;
+}
+.color li {
+	border: 5px solid black;
+	border-radius: 50%;
+	width: 95px;
+	height: 95px;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 10px;
+	color: white;
+	font-family: 'quicksand';
+	margin-bottom: 25px;
+}
+#choose {
+	background-color: rgb(114, 114, 226);
+}
+#a {
+	background-color: #CD50C6;
+}
+#color_pick {
+	background-color: rgb(244, 176, 52);
+}
+#that {
+	background-color: #F03737;
+}
+#matches {
+	background-color: rgb(239, 44, 78);
+}
+#your {
+	background-color: rgb(100, 60, 182);
+}
+#per {
+	background-color: rgb(83, 205, 112);
+}
+#mix {
+	background-color: rgb(202, 4, 38);
+}
+#and {
+	background-color: rgb(242, 222, 83);
+}
+#match {
+	background-color: rgb(141, 211, 209);
+}
+#its {
+	background-color: rgb(247, 94, 48);
+}
+#fun {
+	background-color: #CA4837;
+}
+#its2 {
+	background-color: rgb(206, 167, 208);
+}
+#easy {
+	background-color: rgb(244, 159, 174);
+}
+
+#color2 {
+	text-align: center;
+	background-color: #342F2F;
+}
+h2 {
+	color: #D0D5D5;
+	font-size: 50px;
+	padding-top: 15px;
+	margin-bottom: 0;
+}
+#color2 li {
+	border: 5px solid #FFFFFF;
+	border-radius: 50%;
+	width: 95px;
+	height: 95px;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 12px;
+	color: white;
+	font-family: sans-serif;
+	margin-bottom: 25px;
+	font-family: 'quicksand';
+}
+#choose {
+	background-color: #8989CF;
+}
+#a {
+	background-color: #A97FA7;
+}
+#color {
+	background-color: #F7C264;
+}
+#that {
+	background-color: #CD6868;
+}
+#matches {
+	background-color: #E88D9D;
+}
+#your {
+	background-color: #655781;
+}
+#per {
+	background-color: #6EA37B;
+}
+#mix {
+	background-color: #C01A36;
+}
+#and {
+	background-color: #F2DB39;
+}
+#match {
+	background-color: #80A3A2;
+}
+#its {
+	background-color: #BD4C2A;
+}
+#fun {
+	background-color: #CA4837;
+}
+#its2 {
+	background-color: #8C608E;
+}
+#easy {
+	background-color: #B85C6C;
+}
+
+#color3 {
+	background-color: hsl(0, 47%, 57%);
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#color3 li {
+	border: 5px solid #FFFFFF;
+	border-radius: 50%;
+	width: 95px;
+	height: 95px;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 12px;
+	color: white;
+	font-family: sans-serif;
+	margin-bottom: 25px;
+	font-family: 'quicksand';
+}
+#a {
+	background-color: hsl(10, 93%, 49%);
+}
+#b {
+	background-color: hsl(142, 100%, 26%);
+}
